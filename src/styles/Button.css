@@ -1,0 +1,28 @@
+/* src/styles/Button.css */
+.custom-btn {
+  background: var(--accent-yellow);
+  color: var(--main-black);
+  font-family: var(--heading-font);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 28px;
+  height: 48px;
+  padding: 0 32px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(25,25,25,0.09);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.16s, box-shadow 0.18s;
+}
+.custom-btn:hover, .custom-btn:focus-visible {
+  background: #eeb700;
+  box-shadow: 0 4px 12px rgba(25,25,25,0.13);
+}
+.custom-btn.full-width {
+  width: 100%;
+  display: flex;
+}
