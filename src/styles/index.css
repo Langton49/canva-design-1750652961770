@@ -1,0 +1,93 @@
+/* src/styles/index.css */
+:root {
+  --primary-green: #184734;
+  --accent-yellow: #ffc72c;
+  --main-black: #191919;
+  --main-white: #fff;
+
+  --heading-font: 'Montserrat', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+  --body-font: 'Montserrat', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background: var(--primary-green);
+  color: var(--main-white);
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+  margin: 0;
+}
+
+h1.hero-heading {
+  font-size: 3rem; /* ~48px */
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--main-white);
+  margin-bottom: 20px;
+}
+
+h2.section-title {
+  font-size: 2rem; /* ~32px */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 36px;
+}
+
+@media (max-width: 900px) {
+  h1.hero-heading {
+    font-size: 2rem;
+  }
+  h2.section-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Utility spacing */
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+.mb-16 { margin-bottom: 16px; }
+.mb-12 { margin-bottom: 12px; }
+.mb-24 { margin-bottom: 24px; }
+
+strong {
+  font-weight: 700;
+}
+
+a, .text-link {
+  color: var(--main-white);
+  text-decoration: none;
+  transition: color 0.18s;
+  font-weight: 500;
+}
+a:hover, .text-link:hover {
+  color: var(--accent-yellow);
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  body {
+    font-size: 15px;
+  }
+  section, .hero-section, .speakers-section, .contact-section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
